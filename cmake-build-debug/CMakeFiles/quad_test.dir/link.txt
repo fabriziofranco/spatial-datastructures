@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/quad_test.dir/quad_test.cpp.o -o quad_test  lib/libgtest_maind.a lib/libgtestd.a lib/libgmockd.a lib/libgtestd.a -lpthread 

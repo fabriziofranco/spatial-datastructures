@@ -53,8 +53,9 @@ std::shared_ptr<Node> QuadTree<Node, Rectangle, Point>::search(Point target){
 
 template<typename Node, typename Rectangle, typename Point>
 std::vector<Point> QuadTree<Node, Rectangle, Point>::range(Rectangle region){
-    //TODO
-    return std::vector<Point>();
+    std::vector<Point> resultado{};
+    range_util(this->root,region,resultado);
+    return resultado;
 }
 
 template<typename Node, typename Rectangle, typename Point>
